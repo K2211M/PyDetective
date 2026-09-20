@@ -1,0 +1,7 @@
+timestamp,staff_id,staff_name,item,action,quantity,notes
+Sept 10 09:00,MEHTA-A,Dr. Arjun Mehta,Thiopental-derivative sedative vial (Lot 22B),checked_out,1,for unrelated animal-model trial
+Sept 10 09:40,MEHTA-A,Dr. Arjun Mehta,Thiopental-derivative sedative vial (Lot 22B),returned,1,
+Sept 12 15:20,RANA-K,Kabir Rana,Thiopental-derivative sedative vial (Lot 22B),checked_out,1,"stated reason: ""calibration test"""
+Sept 12 15:55,RANA-K,Kabir Rana,Thiopental-derivative sedative vial (Lot 22B),returned,1,
+Sept 14 19:58,RANA-K,Kabir Rana,Thiopental-derivative sedative vial (Lot 22B),checked_out,1,"stated reason: ""calibration test"""
+Sept 15 08:15,RHEA-S,Rhea Singh,Thiopental-derivative sedative vial (Lot 22B),discrepancy_flagged,1,routine morning cabinet audit -- vial never returned

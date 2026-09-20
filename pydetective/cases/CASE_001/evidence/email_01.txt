@@ -1,0 +1,39 @@
+From: I.Varma@solaris-institute.edu
+To: K.Rana@solaris-institute.edu
+Date: Sept 9, 6:47 PM
+Subject: Fig. 3 raw data
+
+Kabir,
+
+I went back through the raw numbers behind Figure 3 for the joint paper.
+The values in the submitted figure don't match the raw export in three
+places, not small rounding either. I want to believe there's an
+explanation before I take this anywhere. Can we talk before Friday?
+
+-- Ishaan
+
+---
+
+From: K.Rana@solaris-institute.edu
+To: I.Varma@solaris-institute.edu
+Date: Sept 9, 9:12 PM
+Subject: RE: Fig. 3 raw data
+
+Ishaan, that's a processing script difference, nothing more. I'll walk
+you through it whenever. Don't make this bigger than it is.
+
+-- K
+
+---
+
+From: I.Varma@solaris-institute.edu
+To: [dept.chair]@solaris-institute.edu
+Date: Sept 11, 4:51 PM
+Subject: A concern I need to flag before submission
+
+I'd like ten minutes next week. I've found a discrepancy in a co-author's
+figure that I don't think is explained by methodology alone, and I'd
+rather raise it formally before the joint paper goes to review than
+after. I'm drafting a summary now.
+
+-- Ishaan

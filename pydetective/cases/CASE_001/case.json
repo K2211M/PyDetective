@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE_001",
+  "briefing": {
+    "title": "The Solaris Institute Incident",
+    "victim": "Prof. Ishaan Varma, 52, Senior Research Fellow",
+    "location": "Solaris Research Institute, Room 4B (Private Lab)",
+    "date": "Night of September 14th",
+    "summary": "Prof. Ishaan Varma was found dead at his desk in Room 4B late on the night of the 14th, a half-finished cup of tea beside him. The building's night guard found the door unlocked but the lab in perfect order -- nothing stolen, nothing broken. Five people had keycard access to that wing that night, plus one visitor signed in on paper.",
+    "incident": "The Institute's internal review has stalled. You've been brought in to interview the six people who were in or near the building that evening, and to make sense of the physical evidence before the family -- and the board -- demand answers."
+  },
+  "suspects": [
+    {
+      "name": "Dr. Arjun Mehta",
+      "relation_to_victim": "Co-researcher, shared the grant with Varma for 6 years",
+      "alibi": "Says he worked in his own office (Room 4C) until 9:15 PM, then went straight home.",
+      "public_statement": "Ishaan and I disagreed on methodology sometimes, but we respected each other. I have no idea who'd want to hurt him."
+    },
+    {
+      "name": "Maya Kapoor",
+      "relation_to_victim": "Lab assistant, managed Varma's equipment bookings",
+      "alibi": "Says she left the building at 7:40 PM to catch a train, and has a ticket stub.",
+      "public_statement": "I already told the guard everything. I just want to go home, this is really stressful for me."
+    },
+    {
+      "name": "Kabir Rana",
+      "relation_to_victim": "Rival researcher, competing for the same publication slot",
+      "alibi": "Says he left the building around 8:00 PM and went to a bar alone.",
+      "public_statement": "Ishaan and I were competitors, sure, that's academia. Doesn't mean I did anything. Ask literally anyone else."
+    },
+    {
+      "name": "Rhea Singh",
+      "relation_to_victim": "Institute security & IT officer, managed keycard system",
+      "alibi": "Says she was at the front security desk from 6 PM until closing, reviewing camera feeds.",
+      "public_statement": "I keep an eye on the whole east wing from my desk. I can walk you through everyone's badge swipes that night if it helps."
+    },
+    {
+      "name": "Vikram Oberoi",
+      "relation_to_victim": "Institute Director, oversaw Varma's funding renewal",
+      "alibi": "Says he was in a video call with the funding board from 7 PM to 9 PM, then left.",
+      "public_statement": "Ishaan's work was this Institute's crown jewel. His death is a disaster for us on every level, and I want it solved fast."
+    },
+    {
+      "name": "Nisha Verma",
+      "relation_to_victim": "Varma's PhD student, co-authored his last three papers",
+      "alibi": "Says she was in the library until closing, then went straight to her dorm.",
+      "public_statement": "He was tough but fair as an advisor. I don't really want to talk about this more than I have to."
+    }
+  ],
+  "evidence_files": [
+    {
+      "filename": "security_log.txt",
+      "description": "Keycard entry/exit log for the east wing, night of September 14th.",
+      "keywords": ["camera", "footage", "badge", "keycard", "security log", "side door", "turnstile"]
+    },
+    {
+      "filename": "access_record.csv",
+      "description": "Server access log for Prof. Varma's restricted research drive.",
+      "keywords": ["server access", "raw data", "file access", "access log", "fig. 3", "figure 3"]
+    },
+    {
+      "filename": "email_01.txt",
+      "description": "An email thread pulled from the Institute's mail server, dated the week before the incident.",
+      "keywords": ["email", "falsified", "figure 3", "data discrepancy", "dept. chair"]
+    },
+    {
+      "filename": "toxicology_report.txt",
+      "description": "Preliminary medical examiner's toxicology report on Prof. Varma.",
+      "keywords": ["toxicology", "autopsy", "poison", "cause of death", "time of death"]
+    },
+    {
+      "filename": "lab_inventory_log.csv",
+      "description": "Chemical inventory log for the lab's controlled-substance cabinet.",
+      "keywords": ["inventory", "vial", "cabinet", "checked out", "sedative", "chemical"]
+    },
+    {
+      "filename": "maya_overtime_note.txt",
+      "description": "A personal note recovered from Maya Kapoor's work computer.",
+      "keywords": ["overtime", "payroll", "rent"]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+SOLARIS RESEARCH INSTITUTE -- EAST WING KEYCARD LOG
+Export date: Sept 15
+Range: Sept 14, 18:00 - 23:30
+
+18:04  Rhea Singh        FRONT DESK   (on duty)
+18:12  Maya Kapoor        ENTER  Room 4A
+18:40  Nisha Verma        ENTER  Library Annex
+19:02  Dr. Arjun Mehta     ENTER  Room 4C
+19:15  Vikram Oberoi       ENTER  Conference Room B (video call, per calendar)
+19:40  Maya Kapoor        EXIT   Room 4A
+19:41  Maya Kapoor        EXIT   Front Turnstile
+19:55  Kabir Rana          EXIT   Break Room (badge swipe, no door -- logged by proximity reader only)
+20:58  Vikram Oberoi       EXIT   Conference Room B
+21:03  Dr. Arjun Mehta     EXIT   Room 4C
+21:03  Dr. Arjun Mehta     EXIT   Front Turnstile
+21:47  Kabir Rana          ENTER  Room 4B  <-- Prof. Varma's private lab
+22:05  Kabir Rana          EXIT   Side Door C (lower-traffic exit, no turnstile camera)
+22:31  Prof. Ishaan Varma  (already inside Room 4B -- no new swipe, present since 17:30)
+23:08  Night Guard (Patrol) ENTER  Room 4B
+23:10  Night Guard (Patrol) ALERT  -- unresponsive occupant, calling for assistance
+
+Note: no record of Kabir Rana's badge exiting the building via the Front
+Turnstile at any point after 19:55. Side Door C exit at 22:05 is the only
+recorded exit for him that night.

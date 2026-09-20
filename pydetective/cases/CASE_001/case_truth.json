@@ -1,0 +1,165 @@
+{
+  "actual_truth": {
+    "victim": "Prof. Ishaan Varma",
+    "incident": "Poisoning, staged to look like a sudden cardiac event",
+    "culprit": "Kabir Rana",
+    "motive": "Varma had discovered Rana quietly falsified a dataset in his last major paper and told him, that week, that he intended to report it before the joint publication went to review -- ending Rana's chance at tenure.",
+    "method": "Rana checked out a thiopental-derivative sedative vial from the lab's controlled-substance cabinet and slipped it into Varma's tea kettle around 9:50 PM, timed to look like a natural collapse after everyone assumed he'd already left for the night.",
+    "method_keyword": "thiopental",
+    "timeline": [
+      {"time": "19:55", "event": "Rana tells colleagues in the break room he is leaving for the night.", "actor": "Kabir Rana"},
+      {"time": "19:58", "event": "Rana checks out a thiopental-derivative sedative vial from the cabinet, claiming it's for a calibration test.", "actor": "Kabir Rana"},
+      {"time": "20:00", "event": "Rana instead waits in the stairwell, avoiding the front desk camera's main sweep.", "actor": "Kabir Rana"},
+      {"time": "21:47", "event": "Rana badges into Room 4B using his still-active lab access, after Maya and Dr. Mehta have both left the wing.", "actor": "Kabir Rana"},
+      {"time": "21:50", "event": "Rana adds the sedative to the tea kettle Varma keeps in his office.", "actor": "Kabir Rana"},
+      {"time": "22:05", "event": "Rana leaves via the stairwell again, badging out at Side Door C, which has lower camera coverage.", "actor": "Kabir Rana"},
+      {"time": "22:30", "event": "Varma, working late, brews and drinks the tea."},
+      {"time": "23:10", "event": "Night guard finds Varma unresponsive at his desk during rounds."}
+    ]
+  },
+  "investigation_truth": {
+    "contradictions": [
+      {
+        "id": "kabir_alibi_vs_security_log",
+        "suspect": "Kabir Rana",
+        "claim": "Kabir says he left the building around 8:00 PM and went to a bar alone.",
+        "evidence_file": "security_log.txt",
+        "evidence_fact": "The keycard log shows Kabir badging into Room 4B at 21:47 and exiting via Side Door C at 22:05 -- with no earlier exit recorded anywhere that night.",
+        "description": "Kabir's stated alibi does not match his own keycard activity. He was still in the building, and inside the victim's private lab, nearly two hours after he claims to have left."
+      },
+      {
+        "id": "kabir_sedative_checkout",
+        "suspect": "Kabir Rana",
+        "claim": "Kabir claims he doesn't remember checking anything out of the chemical cabinet recently.",
+        "evidence_file": "lab_inventory_log.csv",
+        "evidence_fact": "The lab inventory log shows Kabir's staff ID checking out a thiopental-derivative sedative vial at 19:58 the night of the murder, which was never returned.",
+        "description": "Kabir has never accounted for checking out the exact class of sedative later found in Varma's system -- on the same night, and never returning it."
+      }
+    ],
+    "solution_conditions": {
+      "required_evidence_for_method": ["lab_inventory_log.csv", "toxicology_report.txt"]
+    },
+    "supporting_evidence": ["security_log.txt", "lab_inventory_log.csv", "toxicology_report.txt"]
+  },
+  "deception": {
+    "enabled": false,
+    "planted_target": null,
+    "planted_evidence": [],
+    "false_narrative": null
+  },
+  "character_knowledge": {
+    "Dr. Arjun Mehta": {
+      "known_facts": [
+        "He left Room 4C around 21:00 and badged out through the front turnstile.",
+        "He checked out and returned a sedative vial from the cabinet on Sept 10 for an unrelated animal-model trial, fully logged and returned the same day."
+      ],
+      "beliefs": [
+        "Thinks Kabir has seemed oddly tense since last week's lab meeting.",
+        "Believes Varma was under a lot of stress about the upcoming publication deadline."
+      ],
+      "secrets": [],
+      "lies": [],
+      "unknown_information": [
+        "Does not know what happened in Room 4B after he left.",
+        "Does not know the exact cause of Varma's death."
+      ]
+    },
+    "Maya Kapoor": {
+      "known_facts": [
+        "She left the building at 7:40 PM to catch a train and has a ticket stub proving it.",
+        "Varma repeatedly delayed signing off her overtime hours before payroll cutoff."
+      ],
+      "beliefs": [
+        "Thinks Varma just kept forgetting the paperwork, not deliberately withholding her pay.",
+        "Suspects Vikram pressures Varma about deadlines more than people realize."
+      ],
+      "secrets": [
+        "Her frustration over the unpaid overtime, which she's embarrassed about and worried makes her look suspicious."
+      ],
+      "lies": [],
+      "unknown_information": [
+        "Does not know anything that happened in the building after 7:40 PM.",
+        "Does not know who else was still around that night."
+      ]
+    },
+    "Kabir Rana": {
+      "known_facts": [
+        "He entered Room 4B at 21:47 using his still-active lab access.",
+        "He left through Side Door C at 22:05 specifically because it has lower camera coverage.",
+        "Varma confronted him privately the week before about falsified data in Figure 3 of their joint paper.",
+        "He checked out a sedative vial from the chemical cabinet that same night, claiming it was for a calibration test."
+      ],
+      "beliefs": [
+        "Privately thinks Varma was going to ruin his career over what he considers a minor data-processing difference."
+      ],
+      "secrets": [
+        "That he re-entered Room 4B after telling people he'd already left.",
+        "That he checked out the sedative vial and never returned it.",
+        "That he put anything in Varma's tea.",
+        "That Varma confronted him about falsifying data."
+      ],
+      "lies": [
+        "Claims he left the building around 8:00 PM.",
+        "Claims he went straight to a bar alone and stayed there the rest of the night.",
+        "If asked about the chemical cabinet, claims he doesn't remember checking anything out recently."
+      ],
+      "unknown_information": [
+        "Does not know exactly when Varma drank the tea or when he was found.",
+        "Does not know what the toxicology report says."
+      ]
+    },
+    "Rhea Singh": {
+      "known_facts": [
+        "She was at the front security desk from 6 PM until closing, reviewing camera feeds.",
+        "Side Door C is not covered by a working camera, only a badge reader.",
+        "She flagged a missing sedative vial during the routine morning cabinet audit on the 15th."
+      ],
+      "beliefs": [
+        "Thinks whoever did this knew the building's camera blind spots well.",
+        "Suspects it has to be someone with existing lab access, not an outsider."
+      ],
+      "secrets": [],
+      "lies": [],
+      "unknown_information": [
+        "Does not know what happened inside Room 4B itself -- she only has badge data, not video, for that room.",
+        "Does not know the contents of the toxicology report."
+      ]
+    },
+    "Vikram Oberoi": {
+      "known_facts": [
+        "He was in a video call with the funding board from 7 PM to 9 PM, then left.",
+        "Varma's research was central to the Institute's funding renewal case."
+      ],
+      "beliefs": [
+        "Worries this scandal could tank the funding renewal regardless of who's responsible.",
+        "Thinks the board will ask uncomfortable questions about lab security either way."
+      ],
+      "secrets": [
+        "His private worry that Varma's death could jeopardize the funding renewal, which he doesn't want said publicly before the board reacts."
+      ],
+      "lies": [],
+      "unknown_information": [
+        "Does not know any specifics of the criminal investigation.",
+        "Does not know who had access to the sedative cabinet that night."
+      ]
+    },
+    "Nisha Verma": {
+      "known_facts": [
+        "She was in the library until closing, then went straight to her dorm.",
+        "She co-authored Varma's last three papers and relied on him for her thesis committee."
+      ],
+      "beliefs": [
+        "Suspects some of Varma's colleagues resented how much attention his lab got.",
+        "Doesn't think any of the senior staff would actually hurt him, but isn't sure."
+      ],
+      "secrets": [
+        "Her anxiety about whether she can finish her PhD now that her advisor is gone, which she's embarrassed to admit."
+      ],
+      "lies": [],
+      "unknown_information": [
+        "Does not know anything about the night's events after she left campus.",
+        "Does not know what was in the tea."
+      ]
+    }
+  }
+}
